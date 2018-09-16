@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>割り勘計算</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-area">
+            <input type="text" id="price" placeholder="金額">
+            <input type="text" id="num"" placeholder="人数">
+            <select name="unitYen" id="unit">
+                <option value="10">10単位</option>
+                <option value="100" selected>100単位</option>
+                <option value="1000">1,000単位</option>
+            </select>
+            <div id="btn" class="disabled">計算</div>
+        </div>
+        <div class="result-area">
+            <p id="result">ここに結果を表示します。</p>
+            <div id="reset" class="hidden">もう一度計算します。</div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+   
+</body>
+</html>
